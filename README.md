@@ -15,6 +15,7 @@ Technology that we used:-
 * TAILWIND CSS :- MORE STYLISH
 * RANDOM USER API :- USED TO CREATE RANDOM USERNAME
 * EVENTEMITTER :- USED FOR THE PUBSUB MODEL
+* WEBRTC :- SWARM ADDRESS UTILIZED USES THIS INTERNALLY
 
 How did the technology benefit your project?
 * Serverless 
