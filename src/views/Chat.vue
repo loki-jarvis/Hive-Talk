@@ -325,6 +325,8 @@ export default {
       this.currentChat.channel = await this.rtm.subscribe(chatObj._id);
       this.currentChat.channel.on('new_message', (message) => {
         this.currentChat.messages.push(message);
+        //const now2 = Date.now();
+        //console.log(now2); 
         this.scrollContainerToBottom();
       });
       this.currentChat.channel.on('peer_typing', m => this.currentChat.typing = true); 
@@ -341,6 +343,9 @@ export default {
     },
     async sendMessage() {
       if (!this.currentChat.currentMessage) return;
+      //for(let inde=0;inde<1;inde++){
+      //const now = Date.now();
+      //console.log(now); 
       const message = createMessage(this.currentChat.currentMessage, this.user.id);
       this.currentChat.db.put(message, { pin: true });
       this.currentChat.db.load();
@@ -352,6 +357,7 @@ export default {
       this.sendNotification(this.user.id, modifiedSender);
       this.sortChats(modifiedSender);
       this.scrollContainerToBottom();
+      //}
     },
     typingController(e) {
       if (e.code === 'Backspace' || e.code === 'Enter') return this.currentChat.channel.broadcast('peer_typing_stop');
