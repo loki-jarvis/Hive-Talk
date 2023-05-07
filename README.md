@@ -50,10 +50,12 @@ https://user-images.githubusercontent.com/30473004/236655101-b6c390dc-3b7c-41c5-
 
 # Steps to Test
 
-Metrics to be checked: Error Rate,Throughput & Latency:
+Metrics to be checked: Error Rate,Throughput & Latency
 
-Uncomment the sections in /src/views/Chat.vue for the send message and loadChats functions
+Uncomment the sections in /src/views/Chat.vue for the send message and loadChats functions.
+
 Change the value of index for the number of messages you want to send at a time.
+
 The error rate can be checked by typing a message and hitting send(on clicking enter) which will trigger the scenario.
 Then we verify if both the chats of user1 and user 2 have same data.
 
