@@ -46,7 +46,7 @@ Chatting With the Friend
 
 # Demo Video
 
-https://user-images.githubusercontent.com/30473004/236655101-b6c390dc-3b7c-41c5-9057-dfd4fc63dc15.mp4
+https://github.com/loki-jarvis/hive-talk/assets/30473004/fac1388d-ec1f-4566-8b79-a2e536e8153c
 
 # Steps to Test
 
