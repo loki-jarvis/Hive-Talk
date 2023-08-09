@@ -47,17 +47,3 @@ Chatting With the Friend
 # Demo Video
 
 https://github.com/loki-jarvis/hive-talk/assets/30473004/fac1388d-ec1f-4566-8b79-a2e536e8153c
-
-# Steps to Test
-
-Metrics to be checked: Error Rate,Throughput & Latency
-
-Uncomment the sections in /src/views/Chat.vue for the send message and loadChats functions.
-
-Change the value of index for the number of messages you want to send at a time.
-
-The error rate can be checked by typing a message and hitting send(on clicking enter) which will trigger the scenario.
-Then we verify if both the chats of user1 and user 2 have same data.
-
-We will get the timestamps in the cosole log at which the messages are being sent from user1 and received for user 2.
-With the difference we can determine the throughput and latency.
